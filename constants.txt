@@ -1,0 +1,48 @@
+# Step Size, Background, Resolution.
+STEP 1 #Step Size
+BRGB 1 1 1 #Background Color of Alpha is OFF.
+ALPH true #Turn on alpha background.
+RESO 512 512 #Resolution
+
+
+# Start frame, stop frame, prefix for config files.
+STAR 7
+STOP 15
+PREF /home/sofus/subhome/src/linemarch/blender_addon/configs/out #Prefix for config files (overwrite this one). Uses START/STOP.
+VOXN /home/sofus/subhome/src/linemarch/blender_addon/vox.txt #Prefix for Voxel density file. Uses START/STOP.
+FILE ren/output #Output file prefix.
+
+
+# Voxel Data
+DIMS 100 100 100 #Size of loaded density file.
+LOFR 0 #0: Load file. 1: Generate Perlin Noise.
+PNOI 4 0.03 2.4 216 #Perlin Noise Attributes: Octaves, Frequency, Amplitude, Seed
+CENT 0 0 0
+
+
+# Selected Render Pass: 0, RGBAZ. 1, SPEC.
+#~ PASS 0
+
+
+# Static Lights.
+#~ LPOS 100 0 0
+#~ LCOL 2 0 0
+
+#~ LPOS 0 0 0
+#~ LCOL 0 2 0
+
+#~ LPOS 50 0 0
+#~ LCOL 0 0 2
+
+
+# Material Attributes
+MRGB 1 1 1
+KATT 1 #Attenuation.
+DENS 5 #Density divisor.
+
+
+# Camera Data. Really want to do these in the individual configs, unless this is the only config.
+EYEP 0 0 200
+VDIR 0 0 -1
+UVEC 0 1 0
+FOVY 45

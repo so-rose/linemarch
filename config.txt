@@ -1,0 +1,9 @@
+﻿MRGB 1 1 1
+
+EYEP 50 50 180
+VDIR 0 0 -1
+UVEC 0 1 0
+FOVY 45
+
+
+ENDS
