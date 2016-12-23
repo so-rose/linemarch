@@ -4,9 +4,9 @@ SHELL = /bin/sh
 OBJS = main.o reader.o march.o math.o perlin.o
 
 CXXFLAGS = -Wall -fopenmp -std=gnu++11 -O3
-CXX = gcc
+CXX = g++
 
-LIBS = -lOpenImageIO
+LIBS = -lOpenImageIO -L/usr/lib64 -lstdc++
 
 DATE = $(shell date)
 
