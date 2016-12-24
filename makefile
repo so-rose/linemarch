@@ -5,7 +5,7 @@ OBJS = main.o reader.o march.o math.o perlin.o
 #~ LIBS = openimageio
 
 CXXFLAGS = -Wall -fopenmp -std=gnu++11 -O3
-CXX = g++ -I${CURDIR}/libs/include -L${CURDIR}/libs/objs
+CXX = g++
 
 #~ LIBS = -lOpenImageIO
 LIBS = -lOpenImageIO
