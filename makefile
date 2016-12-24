@@ -5,10 +5,10 @@ OBJS = main.o reader.o march.o math.o perlin.o
 #~ LIBS = openimageio
 
 CXXFLAGS = -Wall -fopenmp -std=gnu++11 -O3
-CXX = g++
+CXX = g++ -I/home/sofus/subhome/src/linemarch/libs/include -L/home/sofus/subhome/src/linemarch/libs/objs
 
 #~ LIBS = -lOpenImageIO
-LIBS = -I/home/sofus/subhome/src/linemarch/libs/include -L/home/sofus/subhome/src/linemarch/libs/objs -lOpenImageIO
+LIBS = -lOpenImageIO
 
 DATE = $(shell date)
 
