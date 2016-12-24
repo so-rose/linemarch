@@ -14,7 +14,7 @@ DATE = $(shell date)
 
 #Main Rules
 
-all: libs march
+all: march
 
 clean:
 	-rm -f *.o march
