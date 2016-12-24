@@ -6,7 +6,7 @@ OBJS = main.o reader.o march.o math.o perlin.o
 CXXFLAGS = -Wall -fopenmp -std=gnu++11 -O3
 CXX = g++
 
-LIBS = -lOpenImageIO -L/usr/lib64 -lstdc++
+LIBS = -lOpenImageIO
 
 DATE = $(shell date)
 
