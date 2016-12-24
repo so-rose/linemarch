@@ -2,7 +2,7 @@
 # use the official gcc image, based on debian
 # can use verions as well, like gcc:5.2
 # see https://hub.docker.com/_/gcc/
-image: debian:sid #Build against the unstable container.
+image: sorose/graphics:main #Build against my custom sid-based graphics image.
 
 build:
   stage: build
