@@ -5,7 +5,7 @@ OBJS = main.o reader.o march.o math.o perlin.o
 #~ LIBS = openimageio
 
 CXXFLAGS = -Wall -fopenmp -std=gnu++11 -O3
-CXX = g++ -I/home/sofus/subhome/src/linemarch/libs/include -L/home/sofus/subhome/src/linemarch/libs/objs
+CXX = g++ -I${CURDIR}/libs/include -L${CURDIR}/libs/objs
 
 #~ LIBS = -lOpenImageIO
 LIBS = -lOpenImageIO
