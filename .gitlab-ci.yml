@@ -10,7 +10,6 @@ build:
   # install the necessary build tools when needed
   before_script: 
     - apt update && apt -y install make autoconf
-    - 
   script: 
     - LD_LIBRARY_PATH=./libs make
   artifacts:
